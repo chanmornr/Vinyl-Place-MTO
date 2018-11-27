@@ -1,0 +1,330 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+
+    <title>Vinyl Place ERP System</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+    
+   
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"></a>
+            <h1 style="display: inline;">Vinyl Place</h1>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            <li><a href="#" id="signOut">Sign Out</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+            <li><a href="customer.html">Customers</a></li>
+            <li><a href="sales.html">Sales Order</a></li>
+            <li><a href="viewpurchase.html">Purchase Order</a></li>
+              <li><a href="inventory.html">Inventory</a></li>
+            <li><a href="invoice.html">Invoices</a></li>
+            <li><a href="#">Packages</a></li>
+            <li><a href="#">Reports</a></li>
+          </ul>
+        
+        </div>
+        
+        <div class="col-sm-12 main">
+          <div class="row">
+            <h1 class="page-header">Inventory</h1>
+
+             <ul class="nav nav-tabs nav-justified " role="tablist" >
+                  <li class="nav-item ">
+                     <a class="nav-link active " href="#view" role="tab" data-toggle="tab" aria-controls="view" aria-expanded="true" style="background-color:#8ddae8">View</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link " href="#create" role="tab" data-toggle="tab" aria-controls="create">Create</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#update" role="tab" data-toggle="tab" aria-controls="update">Update</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#delete" role="tab" data-toggle="tab" aria-controls="delete">Delete</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#search" role="tab" data-toggle="tab" aria-controls="search">Search</a>
+                  </li>
+               </ul>
+               <!-- Tab panes -->
+               <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane fade in active" id="view" aria-controls="create-tab">
+                     <div class="container">
+                        <div class="row">
+                           <div class="table-responsive">
+                              <table class="table table-striped w-auto">
+                                 <thead>
+                                    <tr>
+                                       <th>#</th>
+                                       <th>Item No.</th>
+                                       <th>Name</th>
+                                       <th>Description</th>
+                                       <th>Unit Price</th>
+                                       <th>Quantity in Stock</th>
+                                       <th>Inventory Value</th>
+                                       <th>Reorder Level</th>
+                                       <th>Reorder Time in Days</th>
+                                       <th>Quantity in Reorder</th>
+                                       <th>Discontinued?</th>
+                                    </tr>
+                                 </thead>
+                                 <!--Table head-->
+                                 <!--Table body-->
+                                 <tbody>
+                                    <tr class="table-info">
+                                       <th scope="row">1</th>
+                                       <td>It00001</td>
+                                       <td>Item 1</td>
+                                       <td>Desc 1</td>
+                                       <td>$3.00</td>
+                                       <td>250</td>
+                                       <td>$750.00</td>
+                                       <td>10</td>
+                                       <td>5</td>
+                                       <td>30</td>
+                                       <td></td>
+                                    </tr>
+                                    <tr>
+                                       <th scope="row">2</th>
+                                       <td>It00002</td>
+                                       <td>Item 2</td>
+                                       <td>Desc 2</td>
+                                       <td>$3.00</td>
+                                       <td>250</td>
+                                       <td>$750.00</td>
+                                       <td>10</td>
+                                       <td>5</td>
+                                       <td>30</td>
+                                       <td></td>
+                                    </tr>
+                                    <tr class="table-info">
+                                       <th scope="row">3</th>
+                                       <td>It00003</td>
+                                       <td>Item 3</td>
+                                       <td>Desc 3</td>
+                                       <td>$3.00</td>
+                                       <td>250</td>
+                                       <td>$750.00</td>
+                                       <td>10</td>
+                                       <td>5</td>
+                                       <td>30</td>
+                                       <td>Yes</td>
+                                    </tr>
+                                    <tr>
+                                       <th scope="row">4</th>
+                                       <td>It00004</td>
+                                       <td>Item 4</td>
+                                       <td>Desc 4</td>
+                                       <td>$3.00</td>
+                                       <td>250</td>
+                                       <td>$750.00</td>
+                                       <td>10</td>
+                                       <td>5</td>
+                                       <td>30</td>
+                                       <td></td>
+                                    </tr>
+                                 </tbody>
+                                 <!--Table body-->
+                              </table>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div role="tabpanel" class="tab-pane fade " id="create" aria-controls="create-tab">
+                     <main class="page">
+                        <section class="shopping-cart dark">
+                           <div class="container">
+                              <div class="card">
+                                 <div class="card-header">
+                                    <div class="customer-info ">
+                                       <h4 class="title text-center">Create an Inventory</h4>
+                                       <div class="row">
+                                          
+                                          <div class="row">
+                                             <div class="form-group col-sm-6"> <input id="item-no" type="text" class="form-control" placeholder="Item No." aria-label="Item No." aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="name" type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="description" type="text" class="form-control" placeholder="Description" aria-label="Description" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="unit-price" type="text" class="form-control" placeholder="Unit Price" aria-label="Unit Price" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="quantity-in-stock" type="text" class="form-control" placeholder="Quantity in Stock" aria-label="Quantity in Stock" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="inventory-value" type="text" class="form-control" placeholder="Inventory Value" aria-label="Inventory Value" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="reorder-level" type="text" class="form-control" placeholder="Reorder Level" aria-label="Reorder Level" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="reorder-time-in-days" type="text" class="form-control" placeholder="Reorder Time in Days " aria-label="Reorder Time in Days" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="quantity-in-reorder" type="text" class="form-control" placeholder="Quantity in Reorder" aria-label="Quantity in Reorder" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="discontinued?" type="text" class="form-control" placeholder="Discontinued?" aria-label="Discontinued?" aria-describedby="basic-addon1"> </div>
+                                          </div>
+                                       </div>
+                                       <div class=" text-center"> <button type="button" class="btn btn-info text-center"><a href="">Create</a></button> </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </section>
+                     </main>
+                  </div>
+                  <div role="tabpanel" class="tab-pane fade" id="update" aria-controls="update-tab">
+                     <main class="page">
+                        <section class="shopping-cart dark">
+                           <div class="container">
+                              <div class="card">
+                                 <div class="card-header">
+                                    <div class="customer-info ">
+                                       <h4 class="title text-center">Create an Inventory </h4>
+                                       <div class="row">
+                                          
+                                          <div class="row">
+                                             <div class="form-group col-sm-6"> <input id="item-no" type="text" class="form-control" placeholder="Item No." aria-label="Item No." aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="name" type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="description" type="text" class="form-control" placeholder="Description" aria-label="Description" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="unit-price" type="text" class="form-control" placeholder="Unit Price" aria-label="Unit Price" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="quantity-in-stock" type="text" class="form-control" placeholder="Quantity in Stock" aria-label="Quantity in Stock" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="inventory-value" type="text" class="form-control" placeholder="Inventory Value" aria-label="Inventory Value" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="reorder-level" type="text" class="form-control" placeholder="Reorder Level" aria-label="Reorder Level" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="reorder-time-in-days" type="text" class="form-control" placeholder="Reorder Time in Days " aria-label="Reorder Time in Days" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="quantity-in-reorder" type="text" class="form-control" placeholder="Quantity in Reorder" aria-label="Quantity in Reorder" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="discontinued?" type="text" class="form-control" placeholder="Discontinued?" aria-label="Discontinued?" aria-describedby="basic-addon1"> </div>
+                                          </div>
+                                       </div>
+                                       <div class=" text-center"> <button type="button" class="btn btn-info text-center"><a href="">Update</a></button> </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </section>
+                     </main>
+                  </div>
+                  <div role="tabpanel" class="tab-pane fade" id="delete" aria-controls="delete-tab">
+                     <main class="page">
+                        <section class="shopping-cart dark">
+                           <div class="container">
+                              <div class="card">
+                                 <div class="card-header">
+                                    <div class="customer-info ">
+                                       <h4 class="title text-center">Delete an Inventory</h4>
+                                       <div class="row">
+                                         
+                                          <div class="row">
+                                             <div class="form-group col-sm-11"> <input id="item-no" type="text" class="form-control" placeholder="Item No." aria-label="Item No." aria-describedby="basic-addon1"> </div>
+                                          </div>
+                                       </div>
+                                       <div class=" text-center"> <button type="button" class="btn btn-info text-center"><a href="">Delete</a></button> </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </section>
+                     </main>
+                  </div>
+                  <div role="tabpanel" class="tab-pane fade" id="search" aria-controls="search-tab">
+                     <main class="page">
+                        <section class="shopping-cart dark">
+                           <div class="container">
+                              <div class="card">
+                                 <div class="card-header">
+                                    <div class="customer-info ">
+                                       <h4 class="title text-center">Search an Inventory</h4>
+                                       <div class="row">
+                                          
+                                          <div class="row">
+                                             <div class="form-group col-sm-6"> <input id="item-no" type="text" class="form-control" placeholder="Item No." aria-label="Item No." aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="name" type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="description" type="text" class="form-control" placeholder="Description" aria-label="Description" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="unit-price" type="text" class="form-control" placeholder="Unit Price" aria-label="Unit Price" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="quantity-in-stock" type="text" class="form-control" placeholder="Quantity in Stock" aria-label="Quantity in Stock" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="inventory-value" type="text" class="form-control" placeholder="Inventory Value" aria-label="Inventory Value" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="reorder-level" type="text" class="form-control" placeholder="Reorder Level" aria-label="Reorder Level" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="reorder-time-in-days" type="text" class="form-control" placeholder="Reorder Time in Days " aria-label="Reorder Time in Days" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="quantity-in-reorder" type="text" class="form-control" placeholder="Quantity in Reorder" aria-label="Quantity in Reorder" aria-describedby="basic-addon1"> </div>
+                                             <div class="form-group col-sm-6"> <input id="discontinued?" type="text" class="form-control" placeholder="Discontinued?" aria-label="Discontinued?" aria-describedby="basic-addon1"> </div>
+                                          </div>
+                                       </div>
+                                       <div class=" text-center"> <button type="button" class="btn btn-info text-center"><a href="">Search</a></button> </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </section>
+                     </main>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="authTokenModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="authToken">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Your Auth Token</h4>
+                </div>
+                <div class="modal-body">
+                    <textarea class="authToken"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+          </div>
+        </div>
+     
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+       <script type="text/javascript">
+         $(document).ready(function() {
+             $('#sidebarCollapse').on('click', function() {
+                 $('#sidebar').toggleClass('active');
+             });
+         });
+      </script>
+      <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+    <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+    <script src="js/config.js"></script>
+      <script src="js/cognito-auth.js"></script>
+      <script src="js/ride.js"></script>
+  </body>
+</html>
